@@ -16,13 +16,4 @@ Config.LootTable = {
     {item = 'plienas', count = {1, 3}},
     {item = 'metalas', count = {1, 3}},
 }
-
-Config.Blip = {
-    Enabled = true, -- Enable/Disable blip
-    Sprite = 1, -- Blip icon
-    Color = 2, -- Blip color
-    Scale = 0.8, -- Blip size
-    Name = "Box Location", -- Blip name
-}
-
 return Config
