@@ -59,20 +59,6 @@ local function spawnBox()
         },
     })
 
-
-    if Config.Blip.Enabled then
-        local blip = AddBlipForCoord(position.x, position.y, position.z)
-        SetBlipSprite(blip, Config.Blip.Sprite)
-        SetBlipColour(blip, Config.Blip.Color)
-        SetBlipScale(blip, Config.Blip.Scale)
-        SetBlipAsShortRange(blip, true)
-        BeginTextCommandSetBlipName("STRING")
-        AddTextComponentString(Config.Blip.Name)
-        EndTextCommandSetBlipName(blip)
-    end
-end
-
-
 local function deleteBox(boxID)
     if boxes[boxID] then
         local prop = boxes[boxID].prop
